@@ -135,28 +135,23 @@
             them in a cool way!
           </p>
           <p>
-            <a href="#" id="load-img" class="btn btn-primary my-2"
-              >Load Images</a
-            >
-            <a href="#" id="load-secondary-img" class="btn btn-secondary my-2"
-              >Load Secondary Images</a
-            >
-          </p>
-          <form class="d-flex" id="search-form">
-            <input
-              class="form-control me-2"
-              id="search"
-              type="search"
-              placeholder="Search"
-              aria-label="Search"
-            />
             <button
-              class="btn btn-outline-success"
-              id="btn_search"
-              type="submit"
+              onclick="loadImages('hamsters')"
+              class="btn btn-primary my-2"
             >
-              Search
+              Load Images
             </button>
+            <button
+              onclick="loadImages('puppies')"
+              class="btn btn-secondary my-2"
+            >
+              Load Secondary Images
+            </button>
+          </p>
+        </div>
+        <div>
+          <form id="custom-search" class="d-flex justify-content-center">
+            <input class="form-control w-50" id="search" />
           </form>
         </div>
       </section>
@@ -188,7 +183,7 @@
                       </button>
                       <button
                         type="button"
-                        class="btn btn-sm btn-outline-secondary btn_hide"
+                        class="btn btn-sm btn-outline-secondary hide"
                       >
                         Edit
                       </button>
@@ -223,7 +218,7 @@
                       </button>
                       <button
                         type="button"
-                        class="btn btn-sm btn-outline-secondary btn_hide"
+                        class="btn btn-sm btn-outline-secondary hide"
                       >
                         Edit
                       </button>
@@ -258,7 +253,7 @@
                       </button>
                       <button
                         type="button"
-                        class="btn btn-sm btn-outline-secondary btn_hide"
+                        class="btn btn-sm btn-outline-secondary hide"
                       >
                         Edit
                       </button>
@@ -293,7 +288,7 @@
                       </button>
                       <button
                         type="button"
-                        class="btn btn-sm btn-outline-secondary btn_hide"
+                        class="btn btn-sm btn-outline-secondary hide"
                       >
                         Edit
                       </button>
@@ -328,7 +323,7 @@
                       </button>
                       <button
                         type="button"
-                        class="btn btn-sm btn-outline-secondary btn_hide"
+                        class="btn btn-sm btn-outline-secondary hide"
                       >
                         Edit
                       </button>
@@ -363,7 +358,7 @@
                       </button>
                       <button
                         type="button"
-                        class="btn btn-sm btn-outline-secondary btn_hide"
+                        class="btn btn-sm btn-outline-secondary hide"
                       >
                         Edit
                       </button>
@@ -398,7 +393,7 @@
                       </button>
                       <button
                         type="button"
-                        class="btn btn-sm btn-outline-secondary btn_hide"
+                        class="btn btn-sm btn-outline-secondary hide"
                       >
                         Edit
                       </button>
@@ -433,7 +428,7 @@
                       </button>
                       <button
                         type="button"
-                        class="btn btn-sm btn-outline-secondary btn_hide"
+                        class="btn btn-sm btn-outline-secondary hide"
                       >
                         Edit
                       </button>
@@ -468,7 +463,7 @@
                       </button>
                       <button
                         type="button"
-                        class="btn btn-sm btn-outline-secondary btn_hide"
+                        class="btn btn-sm btn-outline-secondary hide"
                       >
                         Edit
                       </button>
