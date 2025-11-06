@@ -25,17 +25,17 @@ load_button.addEventListener("click", () => {
           const title = cards[index].querySelector(".card-title")
           const text = cards[index].querySelector(".card-text")
           const id_img = cards[index].querySelector(".text-muted")
-          img.src = photo.src.medium
           const detailUrl = `dettaglio.html?id=${photo.id}`
+          img.src = photo.src.medium
+          img.alt = photo.alt
 
-          // IMMAGINE → crea link attorno all'immagine
           const imgLink = document.createElement("a")
           imgLink.href = detailUrl
-          imgLink.appendChild(img.cloneNode(true))
-          img.replaceWith(imgLink)
 
-          // TITOLO → crea link attorno al nome del fotografo
-          title.textContent = "" // svuota il titolo
+          img.parentNode.replaceChild(imgLink, img)
+          imgLink.appendChild(img)
+
+          title.textContent = ""
           const titleLink = document.createElement("a")
           titleLink.href = detailUrl
           titleLink.className = "text-decoration-none"
@@ -80,18 +80,17 @@ load_secondary_button.addEventListener("click", () => {
           const text = cards[index].querySelector(".card-text")
           const id_img = cards[index].querySelector(".text-muted")
 
-          img.src = photo.src.medium
-
           const detailUrl = `dettaglio.html?id=${photo.id}`
+          img.src = photo.src.medium
+          img.alt = photo.alt
 
-          // IMMAGINE → crea link attorno all'immagine
           const imgLink = document.createElement("a")
           imgLink.href = detailUrl
-          imgLink.appendChild(img.cloneNode(true))
-          img.replaceWith(imgLink)
 
-          // TITOLO → crea link attorno al nome del fotografo
-          title.textContent = "" // svuota il titolo
+          img.parentNode.replaceChild(imgLink, img)
+          imgLink.appendChild(img)
+
+          title.textContent = ""
           const titleLink = document.createElement("a")
           titleLink.href = detailUrl
           titleLink.className = "text-decoration-none"
@@ -163,14 +162,15 @@ form.addEventListener("submit", (event) => {
 
           const detailUrl = `dettaglio.html?id=${photo.id}`
           img.src = photo.src.medium
-          // IMMAGINE → crea link attorno all'immagine
+          img.alt = photo.alt
+
           const imgLink = document.createElement("a")
           imgLink.href = detailUrl
-          imgLink.appendChild(img.cloneNode(true))
-          img.replaceWith(imgLink)
 
-          // TITOLO → crea link attorno al nome del fotografo
-          title.textContent = "" // svuota il titolo
+          img.parentNode.replaceChild(imgLink, img)
+          imgLink.appendChild(img)
+
+          title.textContent = ""
           const titleLink = document.createElement("a")
           titleLink.href = detailUrl
           titleLink.className = "text-decoration-none"
