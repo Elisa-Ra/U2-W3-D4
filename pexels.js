@@ -25,7 +25,7 @@ load_button.addEventListener("click", () => {
           const title = cards[index].querySelector(".card-title")
           const text = cards[index].querySelector(".card-text")
           const id_img = cards[index].querySelector(".text-muted")
-
+          img.src = photo.src.medium
           const detailUrl = `dettaglio.html?id=${photo.id}`
 
           // IMMAGINE → crea link attorno all'immagine
@@ -79,6 +79,8 @@ load_secondary_button.addEventListener("click", () => {
           const title = cards[index].querySelector(".card-title")
           const text = cards[index].querySelector(".card-text")
           const id_img = cards[index].querySelector(".text-muted")
+
+          img.src = photo.src.medium
 
           const detailUrl = `dettaglio.html?id=${photo.id}`
 
@@ -160,7 +162,7 @@ form.addEventListener("submit", (event) => {
           const id_img = cards[index].querySelector(".text-muted")
 
           const detailUrl = `dettaglio.html?id=${photo.id}`
-
+          img.src = photo.src.medium
           // IMMAGINE → crea link attorno all'immagine
           const imgLink = document.createElement("a")
           imgLink.href = detailUrl
